@@ -24,14 +24,14 @@ const PageFooter = () => {
     },
   ];
   return (
-    <footer className=" bg-zinc-100">
-      <div className="max-w-5xl mx-auto flex justify-between py-10">
+    <footer className=" bg-zinc-100 px-4">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-4 justify-between py-10">
         {linkSections.map((linkSection) => (
-          <div className="w-max" key={linkSection.header}>
+          <div className="w-max " key={linkSection.header}>
             <h4 className="pb-2.5 text-zinc-700 font-medium">
               {linkSection.header}
             </h4>
-            <ul className="  flex flex-col text-zinc-500 gap-2">
+            <ul className="hidden md:flex flex-col text-zinc-500 gap-2">
               {linkSection.links.map((link) => (
                 <li
                   key={link}

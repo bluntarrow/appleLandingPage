@@ -39,23 +39,23 @@ const Grid = () => {
     },
   ];
   return (
-    <div className="p-4 pt-24 bg-zinc-50 grid gap-4 grid-cols-2">
+    <div className="md:p-4 pt-24 bg-zinc-50 grid gap-4 md:grid-cols-2">
       {products.map((product) => (
         <div
           key={product.header}
-          className={`flex flex-col h-[90vh] p-20 justify-center gap-4 cursor-pointer ${
+          className={`flex flex-col h-[90vh] py-20 md:p-20 justify-center gap-4 cursor-pointer ${
             product.dark ? "bg-black text-zinc-200 " : "text-black"
           }`}
         >
           <div className=" text-center ">
-            <h1 className="text-5xl font-semibold">{product.title}</h1>
-            <h2 className="text-3xl font-medium my-4">
+            <h1 className="text-3xl md:text-5xl font-semibold">{product.title}</h1>
+            <h2 className="text-xl md:text-3xl font-medium my-2 md:my-4">
               {product.header}{" "}
               {product.m2 && (
                 <img src={m2} className="inline h-12 w-12" alt="The M2 Chip" />
               )}
             </h2>
-            <h3 className="text-xl text-blue-400 hover:underline">
+            <h3 className="md:text-xl text-blue-400 hover:underline">
               Learn more
               <ChevronRightIcon className="h-6 w-6 inline"></ChevronRightIcon>
             </h3>

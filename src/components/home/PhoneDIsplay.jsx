@@ -10,9 +10,9 @@ const PhoneDisplay = ({ phone }) => {
       }`}
     >
       <div className=" text-center">
-        <h1 className="text-6xl font-semibold">{phoneName}</h1>
-        <h2 className="text-3xl font-medium my-4">{header}</h2>
-        <h3 className="text-2xl text-blue-400 hover:underline">
+        <h1 className="text-4xl md:text-6xl font-semibold">{phoneName}</h1>
+        <h2 className="text-2xl md:text-3xl font-medium my-2 md:my-4">{header}</h2>
+        <h3 className="text-lg md:text-2xl text-blue-400 hover:underline">
           Learn more
           <ChevronRightIcon className="h-6 w-6 inline"></ChevronRightIcon>
         </h3>
