@@ -1,5 +1,11 @@
-import { getImg } from "../../functions/getImg";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+
+// images
+import mac from "../../assets/img/mac.jpg";
+import ipads from "../../assets/img/ipads.png";
+import ipad from "../../assets/img/ipad.png";
+import se from "../../assets/img/se.png";
+import m2 from "../../assets/img/m2dark.jpg";
 
 const Grid = () => {
   const products = [
@@ -8,28 +14,28 @@ const Grid = () => {
       header: "Supercharged by",
       m2: true,
       dark: true,
-      src: "mac.jpg",
+      src: mac,
     },
     {
       title: 'iPad Air"',
       header: "Light. Bright. Full of might",
       m2: false,
       dark: true,
-      src: "ipads.png",
+      src: ipads,
     },
     {
       title: "iPad Mini",
       header: "Mega power. Mini sized",
       m2: false,
       dark: false,
-      src: "ipad.png",
+      src: ipad,
     },
     {
       title: "iPhone SE",
       header: "Love the power. Love the price",
       m2: false,
       dark: false,
-      src: "se.png",
+      src: se,
     },
   ];
   return (
@@ -45,11 +51,7 @@ const Grid = () => {
             <h2 className="text-3xl font-medium my-4">
               {product.header}{" "}
               {product.m2 && (
-                <img
-                  src={getImg("../assets/img/m2dark.jpg")}
-                  className="inline h-12 w-12"
-                  alt="The M2 Chip"
-                />
+                <img src={m2} className="inline h-12 w-12" alt="The M2 Chip" />
               )}
             </h2>
             <h3 className="text-xl text-blue-400 hover:underline">
@@ -57,11 +59,7 @@ const Grid = () => {
               <ChevronRightIcon className="h-6 w-6 inline"></ChevronRightIcon>
             </h3>
           </div>
-          <img
-            src={getImg(`../assets/img/${product.src}`)}
-            alt=""
-            className=" h-3/4 object-contain"
-          />
+          <img src={product.src} alt="" className=" h-3/4 object-contain" />
         </div>
       ))}
     </div>

@@ -7,18 +7,22 @@ import Macs from "../components/home/Macs";
 import Grid from "../components/home/Grid";
 import PageFooter from "../components/home/PageFooter";
 
+// images
+import pro from "../assets/img/14pro.png";
+import norm from "../assets/img/14.png";
+
 const Home = () => {
   const phones = [
     {
       phoneName: "iPhone 14 Pro",
       pro: true,
-      src: "../assets/img/14pro.png",
+      src: pro,
       header: "Pro. Beyond.",
     },
     {
       phoneName: "iPhone 14",
       pro: false,
-      src: "../assets/img/14.png",
+      src: norm,
       header: "Big and Bigger",
     },
   ];

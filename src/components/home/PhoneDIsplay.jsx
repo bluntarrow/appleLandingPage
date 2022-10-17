@@ -19,7 +19,7 @@ const PhoneDisplay = ({ phone }) => {
         </h3>
       </div>
       <img
-        src={getImg(src)}
+        src={src}
         className={`object-contain ${pro ? "h-full " : "h-3/5"}`}
         alt=""
       />
