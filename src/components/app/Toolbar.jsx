@@ -1,5 +1,6 @@
 import { mdiApple, mdiMagnify } from "@mdi/js";
-import Icon from "@mdi/react";
+import {Icon} from "@mdi/react";
+
 
 const Toolbar = () => {
   const links = ["Mac", "iPad", "iPhone", "Music", "Support", "Where to Buy"];

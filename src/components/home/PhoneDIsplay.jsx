@@ -1,4 +1,3 @@
-import { getImg } from "../../functions/getImg";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 const PhoneDisplay = ({ phone }) => {
@@ -20,7 +19,7 @@ const PhoneDisplay = ({ phone }) => {
       </div>
       <img
         src={src}
-        className={`object-contain ${pro ? "h-full " : "h-3/5"}`}
+        className={`object-contain h-3/5`}
         alt=""
       />
     </div>

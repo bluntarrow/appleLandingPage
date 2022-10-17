@@ -1,5 +1,4 @@
-import { getImg } from "../../functions/getImg";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import ChevronRightIcon from "@heroicons/react/20/solid/ChevronRightIcon";
 import macs from "../../assets/img/macs.png";
 import m2 from "../../assets/img/m2.png";
 const Macs = () => {
@@ -9,22 +8,14 @@ const Macs = () => {
         <h1 className="text-6xl font-semibold">MacBook Air</h1>
         <h2 className="text-3xl font-medium my-4">
           Supercharged by{" "}
-          <img
-            src={m2}
-            className="inline h-12 w-12"
-            alt="The M2 Chip"
-          />
+          <img src={m2} className="inline h-12 w-12" alt="The M2 Chip" />
         </h2>
         <h3 className="text-2xl text-blue-400 hover:underline">
           Learn more
           <ChevronRightIcon className="h-6 w-6 inline"></ChevronRightIcon>
         </h3>
       </div>
-      <img
-        src={macs}
-        alt=""
-        className=" h-full object-contain"
-      />
+      <img src={macs} alt="" className=" h-full object-contain" />
     </div>
   );
 };
