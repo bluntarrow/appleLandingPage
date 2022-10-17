@@ -11,7 +11,7 @@ const Toolbar = () => {
       <Bars2Icon className="absolute left-4 md:hidden h-5 w-5 text-zinc-200" />
       <ul className=" max-w-5xl mx-auto w-full flex justify-center md:justify-between items-center px-4">
         <li>
-          <Icon path={mdiApple} className="h-6 w-6 text-zinc-200 hover:text-zinc-100 transition cursor-pointer"></Icon>
+          <Icon path={mdiApple} className="h-6 w-6 md:h-5 md:w-5 text-zinc-200 hover:text-zinc-100 transition cursor-pointer"></Icon>
         </li>
         {links.map((link) => (
           <li className="hidden md:block w-32 text-center text-xs hover:text-zinc-300 transition cursor-pointer" key={link}>{link}</li>
