@@ -43,7 +43,7 @@ const Grid = () => {
       {products.map((product) => (
         <div
           key={product.header}
-          className={`flex flex-col h-[90vh] py-20 md:p-20 justify-center gap-4 cursor-pointer ${
+          className={`flex flex-col h-[80vh] md:h-[90vh] py-20 md:p-20 justify-center gap-4 cursor-pointer ${
             product.dark ? "bg-black text-zinc-200 " : "text-black"
           }`}
         >

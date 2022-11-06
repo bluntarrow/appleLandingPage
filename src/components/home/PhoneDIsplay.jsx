@@ -5,7 +5,7 @@ const PhoneDisplay = ({ phone }) => {
 
   return (
     <div
-      className={`h-[90vh] flex flex-col justify-between cursor-pointer text-zinc-200 items-center pt-24 ${
+      className={`h-[80vh] md:h-[90vh] flex flex-col justify-between cursor-pointer text-zinc-200 items-center pt-24 ${
         pro ? "bg-black text-zinc-200 " : "bg-zinc-50 text-black"
       }`}
     >
